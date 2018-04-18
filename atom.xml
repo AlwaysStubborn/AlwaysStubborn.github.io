@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-19T07:46:18.205Z</updated>
+  <updated>2018-04-18T07:06:38.001Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/04/18/Regex/"/>
+    <id>http://yoursite.com/2018/04/18/Regex/</id>
+    <published>2018-04-18T07:10:00.779Z</published>
+    <updated>2018-04-18T07:06:38.001Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-正则表达式"><a href="#title-正则表达式" class="headerlink" title="title:正则表达式"></a>title:正则表达式</h2><h3 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h3><p>项目里面用到了一些正则表达式的匹配，就在这里做个总结。</p><blockquote><p>正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。</p></blockquote><p>.net中的正则表达式是使用<font color="green" size="2">Regex</font>来实现的，可用于匹配，替换，切割，项目中主要就用了匹配，根据匹配的结果来控制是否可以成功输入，使用<font color="green" size="2">Regex</font>中的<font color="blue" size="2">IsMatch</font>方法来验证输入。</p><h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><p>用来匹配的特殊字符:<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">^ ：匹配第一个字符</span><br><span class="line">$ ：匹配最后一个字符，如果同时匹配开始和结束位置，就是匹配表达式直接匹配整个字符串</span><br><span class="line">| ：逻辑或，满足两个条件中的一个即可 </span><br><span class="line">- ：负号或者间隔符（<span class="number">1</span><span class="number">-9</span>），数值验证中常用 </span><br><span class="line">? ：左侧表达式可选，-?[<span class="number">0</span><span class="number">-9</span>]可以验证出来带负号或者不带负号的数字，<span class="number">11</span>，<span class="number">-11</span>，<span class="number">1</span><span class="number">-1</span>都可以验证通过，如果要保证负号只能出现</span><br><span class="line">    在首位，需要修改一下,^-?[<span class="number">0</span><span class="number">-9</span>]就可以了</span><br><span class="line"></span><br><span class="line">[<span class="meta"> ：匹配字符组内的字符</span></span><br><span class="line"><span class="meta">+ ：左侧表达式匹配至少一次 </span></span><br><span class="line"><span class="meta">( ：匹配小括号内的字符串 </span></span><br><span class="line"><span class="meta">. ：匹配除换行符 \n 之外的任何单字符。要匹配 .，请使用 \.，^-?[0-9</span>]+(.[<span class="number">0</span><span class="number">-9</span>])就可以匹配小数 </span><br><span class="line">\n：匹配换行符 </span><br><span class="line">\d：匹配所有数字</span><br><span class="line">\u：匹配UTF<span class="number">-16</span>编码</span><br></pre></td></tr></table></figure></p><h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><ul><li><p>身份证的验证<br>简单的验证规则：<br>1.长度验证；2.最后一位可以是x<br>^(\d{6})(\d{4})(\d{2})(\d{2})(\d{3})([0-9]|X)$</p></li><li><p>中文的验证<br>使用\u从中文的起始位置到结束位置<br>[\u4e00-\u9fa5]，类似于[0-9]</p></li><li><p>数值类型验证<br>验证数值类型小数点后可以输入四位小数<br>^-?[0-9]+(.[0-9]{1,4})?$</p></li></ul><h4 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h4><p>复杂的正则表达式很多时候都是简单的表格式叠加，通过+来拆分结构组合起来。<br>最后留个问题，js中的正则表达式和.net框架中的正则表达式的匹配规则是一样的吗？待测试。。。</p><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul><li>++<a href="http://www.runoob.com/regexp/regexp-syntax.html" target="_blank" rel="noopener">正则表达式语法</a>++</li><li>++<a href="https://www.cnblogs.com/zengguowang/p/7779699.html" target="_blank" rel="noopener">正则表达式：小括号、中括号、大括号的区别</a>++</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h2 id=&quot;title-正则表达式&quot;&gt;&lt;a href=&quot;#title-正则表达式&quot; class=&quot;headerlink&quot; title=&quot;title:正则表达式&quot;&gt;&lt;/a&gt;title:正则表达式&lt;/h2&gt;&lt;h3 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>WPF的依赖绑定</title>
