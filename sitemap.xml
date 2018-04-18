@@ -4,14 +4,21 @@
   <url>
     <loc>http://yoursite.com/2018/04/18/Regex/</loc>
     
-    <lastmod>2018-04-18T07:27:53.408Z</lastmod>
+    <lastmod>2018-04-18T09:37:19.236Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2018-04-18T07:53:01.054Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
-    <lastmod>2018-03-23T04:43:10.061Z</lastmod>
+    <lastmod>2018-04-18T07:39:30.254Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2018-03-23T03:51:11.462Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2018-03-23T03:50:54.678Z</lastmod>
     
   </url>
   
